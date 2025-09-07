@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        line-height: 1.6;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      input {
+        width: 100px;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        width: 100px;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background: darkblue;
+      }
+
+      .links {
+        text-decoration: none;
+        color: blue;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="submit.php" method="post">
+      <h1>Sign in</h1>
+
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Username"
+        required
+        autocomplete="off"
+      />
+
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        required
+        autocomplete="new-password"
+      />
+
+      <button type="submit" value="Login">Login</button>
+
+      <div class="links">
+        <a href="#">Forget Password</a>
+        <a href="#">Sign up</a>
+      </div>
+    </form>
+  </body>
+</html>
