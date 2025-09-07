@@ -1,0 +1,28 @@
+body {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.neumorphic-button {
+    background: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffff;
+    padding: 20px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.neumorphic-button:active {
+    box-shadow: inset 6px 10px #bebebe,
+                inset -6px -6px 10px #ffff;
+}
+
+.neumorphic-button:hover {
+    background: #d6d6d6;
+}
